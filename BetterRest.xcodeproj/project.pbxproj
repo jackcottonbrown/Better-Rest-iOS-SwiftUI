@@ -8,9 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		C855F815275C6E3D00913D7B /* BetterRestModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C855F814275C6E3D00913D7B /* BetterRestModel.mlmodel */; };
-		C855F818275D923C00913D7B /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = C855F817275D923C00913D7B /* Lottie */; };
-		C855F81A275D933900913D7B /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C855F819275D933900913D7B /* LottieView.swift */; };
-		C855F81D275D974B00913D7B /* tapAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = C855F81C275D974B00913D7B /* tapAnimation.json */; };
 		C8831B5527559E8700A55ABC /* BetterRestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8831B5427559E8700A55ABC /* BetterRestApp.swift */; };
 		C8831B5727559E8700A55ABC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8831B5627559E8700A55ABC /* ContentView.swift */; };
 		C8831B5927559E8800A55ABC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8831B5827559E8800A55ABC /* Assets.xcassets */; };
@@ -19,8 +16,6 @@
 
 /* Begin PBXFileReference section */
 		C855F814275C6E3D00913D7B /* BetterRestModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = BetterRestModel.mlmodel; sourceTree = "<group>"; };
-		C855F819275D933900913D7B /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
-		C855F81C275D974B00913D7B /* tapAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tapAnimation.json; sourceTree = "<group>"; };
 		C8831B5127559E8700A55ABC /* BetterRest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BetterRest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8831B5427559E8700A55ABC /* BetterRestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetterRestApp.swift; sourceTree = "<group>"; };
 		C8831B5627559E8700A55ABC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -33,21 +28,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C855F818275D923C00913D7B /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C855F81B275D972E00913D7B /* Lottie Files */ = {
-			isa = PBXGroup;
-			children = (
-				C855F81C275D974B00913D7B /* tapAnimation.json */,
-			);
-			path = "Lottie Files";
-			sourceTree = "<group>";
-		};
 		C8831B4827559E8700A55ABC = {
 			isa = PBXGroup;
 			children = (
@@ -67,11 +53,9 @@
 		C8831B5327559E8700A55ABC /* BetterRest */ = {
 			isa = PBXGroup;
 			children = (
-				C855F81B275D972E00913D7B /* Lottie Files */,
 				C855F814275C6E3D00913D7B /* BetterRestModel.mlmodel */,
 				C8831B5427559E8700A55ABC /* BetterRestApp.swift */,
 				C8831B5627559E8700A55ABC /* ContentView.swift */,
-				C855F819275D933900913D7B /* LottieView.swift */,
 				C8831B5827559E8800A55ABC /* Assets.xcassets */,
 				C8831B5A27559E8800A55ABC /* Preview Content */,
 			);
@@ -103,7 +87,6 @@
 			);
 			name = BetterRest;
 			packageProductDependencies = (
-				C855F817275D923C00913D7B /* Lottie */,
 			);
 			productName = BetterRest;
 			productReference = C8831B5127559E8700A55ABC /* BetterRest.app */;
@@ -134,7 +117,6 @@
 			);
 			mainGroup = C8831B4827559E8700A55ABC;
 			packageReferences = (
-				C855F816275D923C00913D7B /* XCRemoteSwiftPackageReference "lottie-ios" */,
 			);
 			productRefGroup = C8831B5227559E8700A55ABC /* Products */;
 			projectDirPath = "";
@@ -151,7 +133,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8831B5C27559E8800A55ABC /* Preview Assets.xcassets in Resources */,
-				C855F81D275D974B00913D7B /* tapAnimation.json in Resources */,
 				C8831B5927559E8800A55ABC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -166,7 +147,6 @@
 				C8831B5727559E8700A55ABC /* ContentView.swift in Sources */,
 				C855F815275C6E3D00913D7B /* BetterRestModel.mlmodel in Sources */,
 				C8831B5527559E8700A55ABC /* BetterRestApp.swift in Sources */,
-				C855F81A275D933900913D7B /* LottieView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,25 +349,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		C855F816275D923C00913D7B /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/airbnb/lottie-ios";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		C855F817275D923C00913D7B /* Lottie */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = C855F816275D923C00913D7B /* XCRemoteSwiftPackageReference "lottie-ios" */;
-			productName = Lottie;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C8831B4927559E8700A55ABC /* Project object */;
 }

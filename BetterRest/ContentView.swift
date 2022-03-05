@@ -23,8 +23,6 @@ struct ContentView: View {
     @State private var hoursOfSleep = 8.0
     @State private var cupsOfCoffee = 1
     @State private var recommendedBedTime = ""
-    @State var tapCounter = 0
-    @State private var showLottieAnimation = false
     
     static var standardWakeUpTime: Date {
         var components = DateComponents()
@@ -77,28 +75,10 @@ struct ContentView: View {
                         .cornerRadius(30)
                     Text("😴💤😴💤😴💤😴💤😴💤😴")
                     
-
-                        
-
                     Spacer()
-                    Text("\(tapCounter)")
                 }
-
             }
-
-    
-
-            
-
-            
-
-        
         }
-        .onTapGesture {
-            showLottieAnimation = true
-            tapCounter += 1
-        }
-        LottieView(animationName: "tapAnimation", loopMode: .playOnce, contentMode: .center)
     }
     func calculateBedtime() {
         do {
